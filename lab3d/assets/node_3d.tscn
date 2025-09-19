@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://dp6kqipf5d42p"]
+
+[ext_resource type="PackedScene" uid="uid://bedxiekeb7ajx" path="res://assets/Entry.tscn" id="1_7hr0d"]
+[ext_resource type="Script" uid="uid://bxd7fhjkjsg44" path="res://assets/node_3d.gd" id="1_j62gk"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_7hr0d"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_j62gk")
+
+[node name="Entry" parent="." instance=ExtResource("1_7hr0d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.050349, 0, -0.398782)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.1446, 12.1597)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.0301896, 0.999544, 0, -0.999544, -0.0301896, 0, 17.9383, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(60, 0, 0, 0, 20, 0, 0, 0, 60, 0, -9.82784, 0)
+mesh = SubResource("BoxMesh_7hr0d")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "H = Idle
+J = Atk_light
+K = Atk_heavy
+L = Run
+
+"
