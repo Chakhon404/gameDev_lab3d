@@ -21,7 +21,7 @@ transform = Transform3D(1, 0, 0, 0, -0.0301896, 0.999544, 0, -0.999544, -0.03018
 transform = Transform3D(60, 0, 0, 0, 20, 0, 0, 0, 60, 0, -9.82784, 0)
 mesh = SubResource("BoxMesh_7hr0d")
 
-[node name="Label" type="Label" parent="."]
+[node name="Labels" type="Label" parent="."]
 offset_right = 40.0
 offset_bottom = 23.0
 text = "H = Idle
